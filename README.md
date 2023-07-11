@@ -33,8 +33,9 @@ constraints:
 
 [Binary number system](https://en.wikipedia.org/wiki/Binary_number)
 
-````
-npm create astro@latest -- --template basics```
+```
+pnpm create astro@latest -- --template basics
+```
 
 ## 🚀 Project Structure
 
@@ -68,17 +69,17 @@ Inside of your Astro project, you'll see the following folders and files:
 │       └── validatorInput.ts
 ├── tailwind.config.cjs
 └── tsconfig.json
-````
+```
 
 ## 🧞 Commands
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `pnpm install`         | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `localhost:3000`      |
+| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm preview`         | Preview your build locally, before deploying     |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
 ## 👀 Want to learn more?
