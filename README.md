@@ -1,44 +1,76 @@
-# Astro Starter Kit: Basics
+# Bin2Dec
 
-```
-npm create astro@latest -- --template basics
-```
+**Tier:** 1-Beginner
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Binary is the number system all digital computers are based on.
+Therefore it's important for developers to understand binary, or base 2,
+mathematics. The purpose of Bin2Dec is to provide practice and
+understanding of how binary calculations.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Bin2Dec allows the user to enter strings of up to 8 binary digits, 0's
+and 1's, in any sequence and then displays its decimal equivalent.
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+This challenge requires that the developer implementing it follow these
+constraints:
+
+- Arrays may not be used to contain the binary digits entered by the user
+- Determining the decimal equivalent of a particular binary digit in the
+  sequence must be calculated using a single mathematical function, for
+  example the natural logarithm. It's up to you to figure out which function
+  to use.
+
+## User Stories
+
+- [ ] User can enter up to 8 binary digits in one input field
+- [ ] User must be notified if anything other than a 0 or 1 was entered
+- [ ] User views the results in a single output field containing the decimal (base 10) equivalent of the binary number that was entered
+
+## Bonus features
+
+- [ ] User can enter a variable number of binary digits
+
+## Useful links and resources
+
+[Binary number system](https://en.wikipedia.org/wiki/Binary_number)
+
+````
+npm create astro@latest -- --template basics```
 
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
-```
-/
-├── public/
+```bash
+.
+├── astro.config.mjs
+├── dist
+│   ├── _astro
+│   │   └── index.74b8e572.css
+│   ├── favicon.svg
+│   └── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── public
 │   └── favicon.svg
-├── src/
-│   ├── components/
+├── README.md
+├── src
+│   ├── components
 │   │   └── Card.astro
-│   ├── layouts/
+│   ├── env.d.ts
+│   ├── layouts
 │   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+│   ├── pages
+│   │   └── index.astro
+│   └── utils
+│       ├── defaultMsg.ts
+│       ├── getElementById.ts
+│       ├── parserBeginner.ts
+│       └── validatorInput.ts
+├── tailwind.config.cjs
+└── tsconfig.json
+````
 
 ## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -50,5 +82,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 ## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
